@@ -22,4 +22,5 @@ export enum ErrorCode {
     INTERNAL_EXCEPTION = 500,
     UNAUTHORIZED = 401,
     PRODUCT_NOT_FOUND = 404,
+    INVALID_PRODUCT_ID = 400,
 }
