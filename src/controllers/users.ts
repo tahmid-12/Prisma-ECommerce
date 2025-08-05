@@ -3,7 +3,6 @@ import { prismaClient } from "../prisma/prisma";
 import { NotFoundException } from "../exceptions/not-found";
 import { ErrorCode } from "../exceptions/root";
 import { Address } from "@prisma/client";
-import { updateUserSchema } from "../schema/users";
 
 export const addAddress = async (req: Request, res: Response) => {
   const user = (req as any).user;
