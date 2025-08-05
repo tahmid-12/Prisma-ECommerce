@@ -23,4 +23,5 @@ export enum ErrorCode {
     UNAUTHORIZED = 401,
     PRODUCT_NOT_FOUND = 404,
     INVALID_PRODUCT_ID = 400,
+    ADDRESS_NOT_FOUND = 404
 }

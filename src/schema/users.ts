@@ -14,3 +14,9 @@ export const AddressSchema = z.object({
   country: z.string(),
   city: z.string(),
 });
+
+export const updateUserSchema = z.object({
+  name: z.string().optional(),
+  defaultShippingAddress: z.number().nullable(),
+  defaultBillingAddress: z.number().nullable()
+})

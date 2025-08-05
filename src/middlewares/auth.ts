@@ -20,7 +20,7 @@ const authMiddleware = async (req: Request, _res: Response, next: NextFunction) 
             where: { id: payload.userId }
         });
 
-        console.log("USER IN MIDDLEWARE",  user?.id)
+        // console.log("USER IN MIDDLEWARE",  user?.id)
 
         if(!user){
             return next(new UnauthorizedException('User not found', ErrorCode.UNAUTHORIZED));
